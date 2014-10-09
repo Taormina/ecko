@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/action_refresh"
+        android:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_copy"
+        android:icon="@drawable/ic_action_copy"
+        android:title="@string/action_copy"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/new_text_link"
+        android:title="@string/new_text_link" />
+</menu>

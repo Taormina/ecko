@@ -1,0 +1,7 @@
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paste_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:inputType="textNoSuggestions"
+    />
