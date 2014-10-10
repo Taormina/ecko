@@ -5,8 +5,6 @@ to your PasteBoard app. **You'll need to provide the app the Dropbox link of the
 You can either set that in-app or set it in res/strings.xml. Debug builds can reset to the string in
 res/strings.xml if needed.
 
-Released under the MIT License.
-
 ## Enjoy!
 
 ###### Email me with any questions
