@@ -1,5 +1,10 @@
+# Android
 .gradle
 /local.properties
-/.idea/workspace.xml
+/.idea/*
 .DS_Store
 /build
+
+# Build Setup
+release.keystore
+release.properties
