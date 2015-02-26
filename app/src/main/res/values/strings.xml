@@ -3,13 +3,7 @@
 
     <string name="app_name">PasteBoard</string>
     <string name="action_copy">Copy</string>
-    <string name="action_refresh">Refresh</string>
-    <string name="new_text_link">Change Link</string>
-    <string name="save">Save</string>
-    <string name="reset">Reset</string>
-    <string name="dialog_label">Your Link is:</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_download">Download</string>
 
-    <!-- Your link goes here! I used Dropbox but you can use whatever. -->
-    <!-- This hello world file can be seen by anyone, so you should change this. -->
-    <string name="default_link">https://www.dropbox.com/s/v6vlrk35u29fvhu/hellowworld.txt?dl=1</string>
 </resources>

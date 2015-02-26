@@ -1,0 +1,18 @@
+#!/bin/bash
+FLASK='pasteboard.elasticbeanstalk.com/api'
+if [ "$1" = "add" ]
+# Update or add a new dummy endpoint at path $2 that returns $3
+then
+	curl -H "Content-Type: text/plain" -d @$3 $FLASK/$2
+elif [ "$1" = "del" ]
+# Delete the endpoint at path $2
+then
+	curl -X DELETE $FLASK/$2
+elif [ "$1" = "get" ]
+# Get the information at path $2
+then
+	curl $FLASK/$2
+else
+# Help
+	echo "Usage: ./placebo.sh <add|del|get> [path] [data]"
+fi

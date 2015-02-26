@@ -14,7 +14,7 @@ android {
     }
 
     compileSdkVersion 21
-    buildToolsVersion "21.1"
+    buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId "com.anthonytaormina.pasteboard"
         minSdkVersion 14
@@ -24,13 +24,13 @@ android {
     }
     buildTypes {
         release {
-            runProguard true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
-            zipAlign true
+            zipAlignEnabled true
         }
         debug {
-            runProguard false
+            minifyEnabled false
         }
     }
     compileOptions {

@@ -433,9 +433,9 @@ public abstract class Request<T> implements Comparable<Request<T>> {
 
     /**
      * Returns the raw POST or PUT body to be sent.
-     *
-     * @throws AuthFailureError in the event of auth failure
-     */
+            *
+            * @throws AuthFailureError in the event of auth failure
+    */
     public byte[] getBody() throws AuthFailureError {
         Map<String, String> params = getParams();
         if (params != null && params.size() > 0) {

@@ -1,0 +1,4 @@
+#!/bin/bash
+pbpaste > temp.txt
+placebo add $1 temp.txt
+rm temp.txt
