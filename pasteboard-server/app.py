@@ -5,17 +5,17 @@ responseMap = {
       'hello': 'Kasey does what he wants'
     }
   
-@app.route('/api/<endpoint>', methods=['POST', 'PUT'])
+@app.route('/api/<path:endpoint>', methods=['POST', 'PUT'])
 def add_endpoint(endpoint):
   responseMap[endpoint] = request.data
   return "Endpoint {} added!\nResponse: {}\n".format(endpoint, responseMap[endpoint])
        
-@app.route('/api/<endpoint>', methods=['DELETE'])
+@app.route('/api/<path:endpoint>', methods=['DELETE'])
 def del_endpoint(endpoint):
   del responseMap[endpoint]
   return "Endpoint {} deleted!\n".format(endpoint)
            
-@app.route('/api/<endpoint>', methods=['GET'])
+@app.route('/api/<path:endpoint>', methods=['GET'])
 def get_endpoint(endpoint):
   if endpoint not in responseMap:
     abort(404)

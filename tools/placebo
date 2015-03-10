@@ -1,5 +1,6 @@
 #!/bin/bash
-FLASK='pasteboard.elasticbeanstalk.com/api'
+#FLASK='pasteboard.elasticbeanstalk.com/api'
+FLASK='localhost:5000/api'
 if [ "$1" = "add" ]
 # Update or add a new dummy endpoint at path $2 that returns $3
 then
